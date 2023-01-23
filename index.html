@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BSpitz Professional Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4af8ce66ab.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <div class="header-text">
+                        <h1>Professional Portfolio</h1>
+                    </div>
+                    <ul id="sidemenu">
+                        <li><a href='#header'>Home</a></li>
+                        <li><a href='#about'>About</a></li>
+                        <li><a href='#services'>Services</a></li>
+                        <li><a href='#portfolio'>Portfolio</a></li>
+                        <li><a href='#contact'>Contact Me</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <hr>
+                <div class="sub-header-text">
+                    <p>Software Engineer</p>
+                    <h1>Brandon Spitz</h1>
+                </div>
+            </div>
+        </div>
+    <!-----------------------About Section-------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/WebsiteMe.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> Risen to leadership positions from a variety of work backgrounds during a rigorous 
+                            honors school schedule. All job and school experience has required great flexibility 
+                            and adaption to difficult situations. Brandon is a Self-Taught Software Engineer seeking 
+                            guidance and opportunities for his career.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Leadership</span><br>Great with People and Management</li>
+                                <li><span>Golang/Java</span><br>Rest API's and Microservices</li>
+                                <li><span>HTML/CSS</span><br>Web Development</li>
+                                <li><span>SQL</span><br>Data Management</li>
+                                <li><span>Accounting</span><br>Financial Knowledge</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Present</span><br>Instructor at Life Time Inc.</li>
+                                <li><span>2021 - 2022</span><br>Field Technician at Paleowest</li>
+                                <li><span>2020 - 2021</span><br>Supervisor at Fired Pie</li>
+                                <li><span>2017 - 2020</span><br>Supervisor at Six Flags</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019 - 2022</span><br>BS from Barrett Honors College at ASU - <span>GPA: 4.00</span></li>
+                                <li><span>2022</span><br>Minor in Business from ASU - <span>GPA: 4.00</span></li>
+                                <li><span>2015 - 2019</span><br>High School Diploma from BGHS - <span>GPA: 4.00</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="awards">
+                            <ul>
+                                <li><span>2022</span><br>Moeur Award from ASU - <span>Presented to students with the highest academic standing upon graduation</span></li>
+                                <li><span>2019 - 2022</span><br>New American University Provost’s Scholarship from ASU - <span>Given to students who maintain high acadmemic standing</span></li>
+                                <li><span>2019 - 2022</span><br>Dean's List from ASU - <span>6/6 Semesters</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-----------------------Services Section-------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                        <h2>Software Development</h2>
+                        <p>Microservices and building API's. Experienced with Golang/Java
+                            and quick to learn any other languages.
+                        </p>
+                        <a href="https://github.com/BSpitz00">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Creating websites with modern and clean designs using lengthy experience
+                            with HTML and CSS.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-folder-open"></i>
+                        <h2>Data Management</h2>
+                        <p>Proficiency with SQL, API's and AWS. Accounting educational background
+                            provides useful knowledge and great experience with Microsoft Office tools.
+                        </p>
+                        <a href="https://www.linkedin.com/in/brandon-spitz-89343b213/">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-----------------------Portfolio Section-------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/Coding.png">
+                        <div class="layer">
+                            <h3>Rest API</h3>
+                            <p>Built with JSON formatting and CRUD. Using Golang, the compiling language 
+                                created by Google to be more efficient to run and simpler to use.</p>
+                            <a href="https://github.com/BSpitz00"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/Laptop.png">
+                        <div class="layer">
+                            <h3>Web Development</h3>
+                            <p>Creating websites with modern formatting and useful functions like the 
+                                one you are visiting right now!
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/Spreadsheet.png">
+                        <div class="layer">
+                            <h3>Data Analysis</h3>
+                            <p>Competent use of SQL to access and modify a database with many other projects
+                                that use spreadsheet tools.
+                            </p>
+                            <a href="https://github.com/BSpitz00"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Back to Top</a>
+            </div>
+        </div>
+    <!-----------------------Contact Section-------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>brandonjspitz@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>602-432-0266</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/brandon-spitz-89343b213/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/BSpitz00"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/brandon_spitz_/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="Images/BrandonSpitzResume2023.pdf" download class="btn btn2">Download Résumé</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Brandon Spitz, 2023</p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbziINuWJdThEArGnLSTdVvPpbDC6hPJFRDpix2SdH9zx4_etFgano1IhDDYeDtPwzBIkw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent!"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
